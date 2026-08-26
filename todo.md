@@ -199,3 +199,16 @@
 - [x] Create a premium editorial `/work` page that explains the project context, Dev Yeasin’s role, delivery scope, and public source for each record.
 - [x] Add the Work route to navigation, site metadata, sitemap, and existing generic direct-route recovery support.
 - [x] Verify desktop and mobile presentation and public source links locally; publish through the automatic GitHub Pages workflow after the user applies the prepared patch.
+
+## Work Route Recovery
+
+- [x] Trace why the published navigation and direct `/work` URL render the application Not Found page after the successful `1ace072` workflow.
+- [x] Apply a narrowly scoped route-recovery correction without changing Work page content or public evidence boundaries.
+- [x] Verify the corrected Work route through live navigation and a direct GitHub Pages URL.
+
+## Insights / Notes Page
+
+- [x] Define a useful first original note based on the live enquiry-form implementation and exclude secret values, unsupported security promises, and generic AI-content claims.
+- [x] Create an editorial `/insights` page with the dated first note, a transparent publishing standard, and a clear route to contact.
+- [x] Add the Insights route to navigation, metadata, sitemap, and the existing cache-safe GitHub Pages fallback coverage.
+- [x] Verify desktop and mobile presentation, then prepare the GitHub Pages publication update.

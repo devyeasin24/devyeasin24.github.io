@@ -6,7 +6,7 @@ const siteOrigin = (import.meta.env.VITE_SITE_URL || "https://devyeasin24.github
 type PageMetadata = {
   title: string;
   description: string;
-  path: "/" | "/about" | "/work" | "/privacy" | "/working-together";
+  path: "/" | "/about" | "/work" | "/insights" | "/privacy" | "/working-together";
 };
 
 function upsertMeta(selector: string, attributes: Record<string, string>) {

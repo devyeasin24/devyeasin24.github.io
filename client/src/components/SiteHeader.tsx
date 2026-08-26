@@ -7,6 +7,7 @@ import { DyMark } from "@/components/DyMark";
 const navItems = [
   ["Services", "/#services"],
   ["Work", "/work"],
+  ["Notes", "/insights"],
   ["Method", "/#method"],
   ["About", "/about"],
   ["Contact", "/#contact"],

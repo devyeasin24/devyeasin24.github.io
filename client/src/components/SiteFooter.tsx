@@ -17,7 +17,7 @@ export function SiteFooter() {
         </div>
         <a href="/#contact" className="footer-contact">Begin with the brief <span>↗</span></a>
       </div>
-      <div className="footer-copyright"><div className="site-container"><span>© {year} Dev Yeasin. All rights reserved.</span><div className="flex flex-wrap items-center gap-x-4 gap-y-2"><a href="/work" className="transition-colors hover:text-white">Work</a><a href="/working-together" className="transition-colors hover:text-white">Working together</a><a href="/privacy" className="transition-colors hover:text-white">Privacy policy</a><span>Independent digital studio</span></div></div></div>
+      <div className="footer-copyright"><div className="site-container"><span>© {year} Dev Yeasin. All rights reserved.</span><div className="flex flex-wrap items-center gap-x-4 gap-y-2"><a href="/work" className="transition-colors hover:text-white">Work</a><a href="/insights" className="transition-colors hover:text-white">Notes</a><a href="/working-together" className="transition-colors hover:text-white">Working together</a><a href="/privacy" className="transition-colors hover:text-white">Privacy policy</a><span>Independent digital studio</span></div></div></div>
     </footer>
   );
 }

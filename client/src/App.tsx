@@ -10,6 +10,7 @@ import About from "./pages/About";
 import Privacy from "./pages/Privacy";
 import WorkingTogether from "./pages/WorkingTogether";
 import Work from "./pages/Work";
+import Insights from "./pages/Insights";
 
 function Router() {
   return (
@@ -17,6 +18,7 @@ function Router() {
       <Route path="/" component={Home} />
       <Route path="/about" component={About} />
       <Route path="/work" component={Work} />
+      <Route path="/insights" component={Insights} />
       <Route path="/privacy" component={Privacy} />
       <Route path="/working-together" component={WorkingTogether} />
       <Route path="/404" component={NotFound} />
