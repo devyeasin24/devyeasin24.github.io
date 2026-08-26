@@ -14,7 +14,12 @@ export const studio = {
   availability: "Open to scoped projects and remote-role conversations.",
 };
 
-const publicAssetBase = (import.meta.env.VITE_PUBLIC_ASSET_BASE_URL || "").replace(/\/+$/, "");
+const configuredPublicAssetBase = import.meta.env.VITE_PUBLIC_ASSET_BASE_URL || "";
+const detectedGitHubPagesAssetBase =
+  typeof window !== "undefined" && window.location.hostname === "devyeasin24.github.io"
+    ? `${window.location.origin}/media`
+    : "";
+const publicAssetBase = (configuredPublicAssetBase || detectedGitHubPagesAssetBase).replace(/\/+$/, "");
 
 function publicAssetUrl(fileName: string, manusFallback: string) {
   return publicAssetBase ? `${publicAssetBase}/${fileName}` : manusFallback;
