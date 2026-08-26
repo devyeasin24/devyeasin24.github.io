@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="Dev Yeasin studio mark">
+  <rect width="64" height="64" fill="#f04e37"/>
+  <path d="M17 13V51M17 13H31C49 13 49 51 31 51H17" fill="none" stroke="#121313" stroke-width="6" stroke-linecap="square" stroke-linejoin="miter"/>
+  <path d="M37 16 22 48M13 51H51" fill="none" stroke="#121313" stroke-width="4" stroke-linecap="square"/>
+</svg>
