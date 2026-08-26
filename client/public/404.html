@@ -8,7 +8,9 @@
       try {
         sessionStorage.setItem("dev-yeasin-github-pages-route", window.location.href);
       } catch {}
-      window.location.replace("/");
+      // A unique root query avoids a stale cached index.html loading an older route map.
+      // main.tsx restores the saved path and removes this temporary query before React renders.
+      window.location.replace(`/?github-pages-route=${Date.now()}`);
     </script>
   </head>
   <body>
