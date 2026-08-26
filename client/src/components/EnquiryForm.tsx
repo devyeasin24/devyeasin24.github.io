@@ -72,7 +72,7 @@ export function EnquiryForm() {
         <label className="message-field">What are you looking to improve?<textarea name="project-message" value={values.message} onChange={(event) => update("message", event.target.value)} maxLength={3000} placeholder="The context, main goal, timeline, and useful links or references." aria-invalid={status === "error" && values.message.trim().length < 20} /></label>
         <label className="honeypot" aria-hidden="true">Website<input name="website" tabIndex={-1} autoComplete="off" value={values.website} onChange={(event) => update("website", event.target.value)} /></label>
       </div>
-      <label className="consent-row"><input name="consent" type="checkbox" checked={values.consent} onChange={(event) => update("consent", event.target.checked)} /><span>I agree that Dev Yeasin may use these details to reply to this enquiry.</span></label>
+      <label className="consent-row"><input name="consent" type="checkbox" checked={values.consent} onChange={(event) => update("consent", event.target.checked)} /><span>I agree that Dev Yeasin may use these details to reply to this enquiry. Read the <a href="/privacy">Privacy Policy</a>.</span></label>
       <div className="form-submit-row"><button type="submit" disabled={status === "sending"} className="form-submit">{status === "sending" ? "Sending…" : "Send enquiry"}<Send className="h-4 w-4" aria-hidden="true" /></button>{notice && <p id="form-feedback" role={status === "error" ? "alert" : "status"} aria-live="polite" className={status === "sent" ? "form-success" : "form-notice"}>{status === "sent" && <CheckCircle2 className="h-4 w-4" aria-hidden="true" />}{notice}</p>}</div>
     </form>
   );
