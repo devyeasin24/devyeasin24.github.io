@@ -135,6 +135,54 @@ export const selectedWork = [
   },
 ];
 
+export const workCaseStudies = [
+  {
+    index: "01",
+    title: "Systeme.io digital-product funnel",
+    category: "Landing flow / automation",
+    context:
+      "A public Fiverr portfolio record for a digital-product customer journey, organised from the first landing-page visit through checkout and product delivery.",
+    role:
+      "Landing-page build, email sequence setup, multi-step checkout structure, and digital-product delivery workflow.",
+    deliverables: ["Landing page", "Automated email sequences", "Multi-step checkout", "Digital-product delivery flow"],
+    buildDetail:
+      "The public record identifies Systeme.io as the delivery platform. This case record documents the visible scope only; it does not state conversion, revenue, or sales outcomes.",
+    image: publicAssetUrl("systemeio-digital-product-funnel-public-preview.png", "/manus-storage/systemeio-digital-product-funnel-public-preview_6af26311.png"),
+    alt: "Public Fiverr portfolio preview for a Systeme.io digital-product funnel",
+    sourceHref: "https://www.fiverr.com/users/dev_yeasin24/portfolio?utm_medium=shared&utm_source=copy_link&utm_campaign=portfolio&utm_term=8zk1lZv",
+  },
+  {
+    index: "02",
+    title: "Shopify storefront design & maintenance",
+    category: "Storefront / collections",
+    context:
+      "A public Fiverr portfolio record for a Shopify apparel storefront with multiple product collections.",
+    role:
+      "Shopify storefront design and maintenance, with a focus on presenting a multi-collection product catalogue.",
+    deliverables: ["Storefront design", "Collection presentation", "Product-catalogue surface", "Maintenance scope"],
+    buildDetail:
+      "The public record supports the Shopify platform and multi-collection context. It does not identify the client here or make claims about storefront performance or an ongoing business relationship.",
+    image: publicAssetUrl("shopify-web-design-public-preview.png", "/manus-storage/shopify-web-design-public-preview_784e89e1.png"),
+    alt: "Public Fiverr portfolio preview for Shopify storefront design and maintenance",
+    sourceHref: "https://www.fiverr.com/users/dev_yeasin24/portfolio?utm_medium=shared&utm_source=copy_link&utm_campaign=portfolio&utm_term=8zk1lZv",
+  },
+  {
+    index: "03",
+    title: "Portland Ace Force Bootcamp funnel",
+    category: "Fitness & wellness / funnel flow",
+    context:
+      "A public Fiverr portfolio record for a fitness and wellness customer journey arranged across three connected pages.",
+    role:
+      "Three-page funnel implementation covering the landing page, service overview, thank-you page, CTA structure, and mobile optimisation.",
+    deliverables: ["Landing page", "Service overview", "Thank-you page", "CTA structure", "Mobile optimisation"],
+    buildDetail:
+      "The original public record is retained as the source. This page records its stated delivery scope and does not repeat unverified lead-generation, trust, or conversion language.",
+    image: publicAssetUrl("portland-ace-force-fitness-funnel-public-preview.png", "/manus-storage/portland-ace-force-fitness-funnel-public-preview_c91665db.png"),
+    alt: "Public Fiverr portfolio preview for the Portland Ace Force Bootcamp three-page funnel",
+    sourceHref: "https://www.fiverr.com/users/dev_yeasin24/portfolio/Njg3YTY0NjZmOTBhZjAwMDAxNTViMjdh",
+  },
+];
+
 export const internationalAudienceNote = {
   status: "Verification pending",
   body: "Dev reported an international Fiverr audience. The raw country figures currently supplied do not form one valid percentage distribution, so they are intentionally not displayed until a source export and reporting period are confirmed.",
