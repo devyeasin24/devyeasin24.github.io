@@ -212,3 +212,21 @@
 - [x] Create an editorial `/insights` page with the dated first note, a transparent publishing standard, and a clear route to contact.
 - [x] Add the Insights route to navigation, metadata, sitemap, and the existing cache-safe GitHub Pages fallback coverage.
 - [x] Verify desktop and mobile presentation, then prepare the GitHub Pages publication update.
+
+## Page Architecture Audit
+
+- [x] Inventory the currently published client-facing pages, navigation, and conversion paths.
+- [x] Assess any potential next pages against evidence availability, client clarity, maintenance effort, and risk of thin or unsupported content.
+- [x] Provide a prioritized recommendation that clearly separates pages to build now, later, or avoid.
+
+## Favicon Check
+
+- [x] Inspect the live favicon, browser markup, and current public icon assets.
+- [x] Create and integrate a clear Signal Red studio-mark favicon because no favicon asset or head reference was present.
+- [x] Verify the SVG mark at icon scale, confirm the production build includes both the asset and its document-head reference, and confirm the public favicon file is live after commit `0240aa5`.
+
+## Professional Platform Icons
+
+- [x] Inspect every public Upwork, Fiverr, Fiverr Portfolio, GitHub, LinkedIn, and X link presentation and the installed icon library.
+- [x] Add modern, recognisable, accessible platform icons without changing link destinations, labels, source context, or evidence claims.
+- [x] Verify the production build and desktop contact presentation; the responsive button layout retains labels and non-clipped icon treatments at phone width, then prepare the GitHub Pages publication update.

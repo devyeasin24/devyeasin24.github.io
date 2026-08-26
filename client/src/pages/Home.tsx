@@ -1,11 +1,22 @@
 // Design note: Contemporary Digital Atelier — an immersive dark-led agency composition with editorial structure, material-like CSS visuals, and verified-evidence boundaries.
-import { ArrowDownRight, ArrowRight, ArrowUpRight, Check, Code2, ExternalLink, Github, Layers3, Mail, MessageCircle, Sparkles } from "lucide-react";
+import { ArrowDownRight, ArrowRight, ArrowUpRight, Check, Code2, Layers3, Mail, MessageCircle, Sparkles } from "lucide-react";
+import { FaLinkedinIn } from "react-icons/fa6";
+import { SiFiverr, SiGithub, SiUpwork, SiX } from "react-icons/si";
 import { SiteFooter } from "@/components/SiteFooter";
 import { SiteHeader } from "@/components/SiteHeader";
 import { EnquiryForm } from "@/components/EnquiryForm";
 import { DyMark } from "@/components/DyMark";
 import { contactDestinations, evidencePolicy, fiverrRecord, platformDestinations, portraitUrl, publicRecord, selectedWork, services, studio, workingPrinciples } from "@/content/siteContent";
 import { usePageMetadata } from "@/lib/seo";
+
+const platformIconByLabel = {
+  Upwork: SiUpwork,
+  Fiverr: SiFiverr,
+  "Fiverr portfolio": SiFiverr,
+  GitHub: SiGithub,
+  LinkedIn: FaLinkedinIn,
+  "X (Twitter)": SiX,
+} as const;
 
 export default function Home() {
   usePageMetadata({ title: "Dev Yeasin — Independent Digital Studio", description: "Independent digital studio for Shopify landing pages, WordPress websites, and practical customer journeys.", path: "/" });
@@ -146,7 +157,10 @@ export default function Home() {
               </div>
               <div className="platform-links">
                 <p>Public professional record <span>Source links / current</span></p>
-                <div>{platformDestinations.map((item) => <a key={item.label} href={item.href} target="_blank" rel="noreferrer">{item.label === "GitHub" ? <Github className="h-3.5 w-3.5" /> : <ExternalLink className="h-3.5 w-3.5" />}{item.label}</a>)}</div>
+                <div>{platformDestinations.map((item) => {
+                  const PlatformIcon = platformIconByLabel[item.label as keyof typeof platformIconByLabel];
+                  return <a key={item.label} href={item.href} target="_blank" rel="noreferrer" aria-label={`Open Dev Yeasin's ${item.label} profile in a new tab`}><PlatformIcon className="platform-link-icon" aria-hidden="true" focusable="false" />{item.label}</a>;
+                })}</div>
               </div>
               <EnquiryForm />
             </div>
